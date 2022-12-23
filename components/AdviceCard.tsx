@@ -14,10 +14,10 @@ export const AdviceCard = ({ adviceText, id, handleAdvice }: TextProps) => {
                 {"  "}
                 <span className=" font-bold  ml-2 ">#{id}</span>
             </p>
-            <div className="text-lg md:text-2xl font-manrope font-semibold text-gray-300 leading-8 text-center mt-4">
+            <div className="text-lg md:text-2xl font-manrope font-semibold text-gray-300 leading-8 text-center my-8">
                 &quot;{adviceText}&quot;
             </div>
-            <hr className="w-[380px] border-t-1  border-gray-500 mt-8 absolute bottom-16 mx-auto" />
+            <hr className="w-[380px] border-t-1  border-gray-500 absolute bottom-16 mx-auto" />
             <div className="absolute -bottom-[30px] mx-auto ">
                 <CircularButton handleAdvice={handleAdvice} />
             </div>
