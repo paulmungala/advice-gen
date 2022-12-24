@@ -8,13 +8,17 @@ const Home: NextPage = () => {
 
     if (isLoading) {
         return (
-            <AdviceCard
-                id={0}
-                adviceText="loading"
-                handleAdvice={() => {
-                    console.log("loading...");
-                }}
-            />
+            <div className="flex min-h-screen bg-gray-800 flex-col items-center py-2">
+                <h1 className="text-emerald-200 font-bold text-2xl md:text-4xl font-manrope mt-4 rounded-xl hover:rounded-xl hover:shadow-lg hover:shadow-emerald-600 hover:bg-emerald-500 hover:text-emerald-100 px-4 py-2 transition duration-300 ease-in ">
+                    Advice App
+                </h1>
+                {/* card */}
+                <AdviceCard
+                    id={0}
+                    adviceText="Loading.."
+                    handleAdvice={refetch}
+                />
+            </div>
         );
     }
     return (
